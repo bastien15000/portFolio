@@ -1,0 +1,66 @@
+main {
+    background: $black2;
+    font-family: 'Montserrat', sans-serif;
+    nav {
+        background: $black1;
+        height: 100vh;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        align-items: center;
+        .presentation {
+            text-align: center;
+            .logo {
+                padding: 40px 0 20px;
+                font-size: 50px;
+                font-weight: bold;
+                a {
+                    color: $red;
+                    text-shadow: -2px 0px 0 $cyan;
+                }
+            }
+            h1 {
+                width: 75%;
+                margin: 0 auto;
+                font-size: 35px;
+                text-align: center;
+            }
+            .job {
+                color: $grayText;
+                margin: 15px 0 30px; 
+            }
+        }    
+        ul {
+            background: $black2;
+            width: 100%;
+            text-align: center;
+            padding: 40px 0 0px;
+            li {
+                margin-bottom: 40px;
+                a {
+                    font-weight: 600;
+                    color: $grayText;
+                    font-size: 20px;
+                    transition: 0.1s;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .social-links {
+            padding: 40px 0;
+            i {
+                font-size: 25px;
+                padding: 0px 10px;
+                color: $grayText;
+                transition: 0.1s;
+                cursor: pointer;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
