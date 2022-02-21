@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    @media screen and(max-width: 992px) {
+        overflow-y: scroll;
+    }
+}
 ul {
     list-style: none;
 }
@@ -12,5 +20,10 @@ a {
     font-family: 'Montserrat', sans-serif;
 }
 
+@import './mixins/mixins';
 @import './colors.scss';
 @import './sideBar.scss';
+@import './sections/presentations';
+@import './sections/competences';
+@import './sections/projets';
+@import './sections/contact';

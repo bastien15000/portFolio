@@ -10,26 +10,210 @@
 </head>
 <body>
     <main>
-        <nav>
+        <nav class="sideBar">
             <div class="presentation">
                 <div class="logo">
-                    <a href="#">B</a>
+                    <a href="#"><span>B</span><span>T</span></a>
                 </div>
                 <h1>Bastien Takis</h1>
                 <p class="job">Développeur Web</p>
             </div>
             <ul>
-                <li><a href="#">Présentation</a></li>
-                <li><a href="#">Compétences</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#presentation">Presentation</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="social-links">
-                <i class="fab fa-linkedin-in"></i>
-                <i class="fab fa-gitlab"></i>
-                <i class="fab fa-facebook-f"></i>
+                <a href="https://gitlab.com/bastien15000">
+                    <i class="fab fa-gitlab"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bastien-takis-40743120a/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.facebook.com/bastien.takis">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
             </div>
         </nav>
+        <nav class="phone-nav">
+            <div class="phone-nav-wrapper">
+                <div class="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="social-links">
+                    <a href="https://gitlab.com/bastien15000">
+                        <i class="fab fa-gitlab"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/bastien-takis-40743120a/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/bastien.takis">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="overlay">
+                <!-- <div class="logo">
+                    <a href="#"><span>B</span><span>T</span></a>
+                </div> -->
+                <ul>
+                    <li><a href="#presentation">Presentation</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-sections">
+            <section id="presentation">
+                <div class="wrapper-presentation">
+                    <div class="text-presentation">
+                        <div class="bloc-left">
+                            <div class="text">
+                                <p>Bonjour,</p>
+                                <p>Je m'appelle <span>B</span>astien <span>T</span>akis,</p>
+                                <p>Je suis développeur web,</p>
+                            </div>
+                            <a href="#contact">Contactez-moi !</a>
+                        </div>
+                        <img src="img/bastienTakis.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section id="competences">
+                <!-- <div class="margin-bloc"></div> -->
+                <div class="wrapper-competences">
+                    <div class="flex-container">
+                        <div class="left-container">
+                            <h2>Compétences <br>& Expériences</h2>
+                            <p>Je suis actuellement en licence professionnelle dans les métiers du numérique. Ma formation est en alternance, je travaille également pour l’entreprse Radar Technologies qui est spécialisée dans le développement web.</p>
+                            <p>Auparavant, j’ai réalisé un BTS SIO (Service Informatiques aux organisations) dans lequel j’ai appris les bases du développement Web. En parallèle, je me suis formé en autodidacte pour acquerir davantage de connaissances en programmation.</p>
+                            <p>Je suis également passionné de musique et je réalise régulièrement des chansons sur les plateformes de streaming telles que Spotify, Deezer, et iTunes.</p>
+                        </div>
+                        <div class="right-container">
+                            <div class="bars-container">
+                                <div class="bar-container">
+                                    <p>Symfony</p>
+                                    <div class="bg-bar">
+                                        <div class="color-bar blue"></div>
+                                    </div>
+                                </div>
+                                <div class="bar-container">
+                                    <p>Javascript</p>
+                                    <div class="bg-bar">
+                                        <div class="color-bar red"></div>
+                                    </div>
+                                </div>
+                                <div class="bar-container">
+                                    <p>SCSS</p>
+                                    <div class="bg-bar">
+                                        <div class="color-bar pink"></div>
+                                    </div>
+                                </div>
+                                <div class="bar-container">
+                                    <p>React</p>
+                                    <div class="bg-bar">
+                                        <div class="color-bar blue"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp-container">
+                                <div class="bloc-left bloc">
+                                    <div class="container">
+                                        <h3>Apprenti Développeur</h3>
+                                        <p>Radar technologies</p>
+                                        <p>2021 - Maintenant</p>
+                                        <p>Développeur pour une entreprise de sous-traitance, spécialisée dans la création web d’outil de gestion d’entrprises.</p>
+                                    </div>
+                                </div>
+                                <div class="bloc-right bloc">
+                                    <div class="container">
+                                        <h3>Licence Professionnelle</h3>
+                                        <p>IUT Puy-en-Velay</p>
+                                        <p>2021-Maintenant</p>
+                                        <p>Formation dans les métiers du numérique, étude de tous les sujets et des enjeux liés à la conception de sites web.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projets">
+                <div class="overlayModal"></div>
+                <div class="wrapper-projets">
+                    <div class="flex-projets">
+                        <div class="modal">
+                            <img src="img/pingreenScoreCapture.png" alt="">
+                            <img src="img/coujouleCapture.png" alt="">
+                            <img src="img/myBpapCapture.png" alt="">
+                            <img src="img/leboncoinCapture.png" alt="">
+                            <img src="img/urbanTrailCapture.png" alt="">
+                            <img src="img/jeuVideoCaptures.jpg" alt="">
+                        </div>
+                        <div class="container-projet">
+                            <a href="#projets">
+                                <img src="img/pingreenScore.jpg" alt="">
+                                <p>Pingreen Score</p>
+                            </a>
+                        </div>
+                        <div class="container-projet">
+                            <a href="#projets">
+                                <img src="img/coujoule.jpg" alt="">
+                                <p>Ferme du Puy de Coujoule</p>
+                            </a>
+                        </div>
+                        <div class="container-projet">
+                            <a href="#projets">
+                                <img src="img/myBpap.jpg" alt="">
+                                <p>My BPAP</p>
+                            </a>
+                        </div>
+                        <div class="container-projet">
+                            <a href="#projets">
+                                <img src="img/miniLeBonCoin.jpg" alt="">
+                                <p>Mini Le Bon Coin</p>
+                            </a>
+                        </div>
+                        <div class="container-projet">
+                            <a href="#projets">
+                                <img src="img/urbanTrail.jpg" alt="">
+                                <p>Le Puy Urban Trail</p>
+                            </a>
+                        </div>
+                        <div class="container-projet">
+                            <a href="#projets">
+                                <img src="img/monJeuCapture1.jpg" alt="">
+                                <p>Mon premier jeu vidéo</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="contact-wrapper">
+                    <div class="form-contact">
+                        <div class="form-wrapper">
+                            <h2>Contactez-moi</h2>
+                            <p>Si vous êtes intéressé par mon profil, n’hésitez pas à me contacter avec le formulaire ci-contre :</p>
+                            <form action="" method="POST">
+                                <input type="text" name="email" id="email "placeholder="Email" autocomplete="off">
+                                <input type="text" name="sujet" id="sujet" placeholder="Sujet" autocomplete="off">
+                                <textarea name="message" id="message" placeholder="Message..." autocomplete="off"></textarea>
+                                <div class="submit-container">
+                                    <input type="submit" value="Envoyer">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="img/contact.jpg" alt="image de contact">
+                        <div class="mon-email-container"><p><span id="arobase">@</span>: bastientakis@gmail.com</p></div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <script src="./scripts/index.js"></script>
 </body>

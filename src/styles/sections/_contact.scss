@@ -1,0 +1,98 @@
+#contact {
+    margin-top: 150px;
+    padding: 0 0 0 220px;
+    @media screen and (max-width: 992px) {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .contact-wrapper {
+        display: flex;
+        .form-contact {
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+            }
+            width: 50%;
+            margin-top: 110px;
+            .form-wrapper {
+                width: 80%;
+                margin: 0 auto;
+                h2 {
+                    color: $cyan;
+                    font-size: calc(20px + 1.5vw);
+                }
+                p {
+                    color: white;
+                    font-size: calc(15px + 0.3vw);
+                    margin: 20px 0;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    & > * {
+                        margin-top: 20px;
+                        &:not(:last-child) {
+                            background: $grayBackground2;
+                            border: none;
+                            color: $grayText;
+                            padding: 0 20px;
+                            font-size: 18px;
+                        }
+                    }
+                    input {
+                        height: 40px;
+                        font-family: 'Montserrat';
+                        outline: none;
+                        &[type="submit"] {
+                            width: 25%;
+                            color: $cyan;
+                            background: transparent;
+                            border: 1px solid $cyan;
+                            transition: 0.3s;
+                            cursor: pointer;
+                            &:hover {
+                                background: #000;
+                                color: #fff;
+                                border: none;
+                                transform: translateX(3px);
+                            }
+                        }
+                    }
+                    #message {
+                        font-family: 'Montserrat';
+                        resize: none;
+                        height: 180px;
+                        padding-top: 10px;
+                        outline: none;
+                    }
+                    .submit-container {
+                        display: flex;
+                        justify-content: end;
+                    }
+                }
+            }
+        }
+        .image-container {
+            width: 50%;
+            position: relative;
+            @media screen and (max-width: 1200px) {
+                display: none;
+            }
+            img {
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+                object-position: center;
+                opacity: 0.8;
+            }
+            .mon-email-container {
+                position: absolute;
+                bottom: 0px;
+                background: #000;
+                opacity: 70%;
+                height: 70px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

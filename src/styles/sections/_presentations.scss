@@ -1,0 +1,87 @@
+.container-sections {
+    #presentation {
+        width: 100%;
+        padding-top: 180px;
+        @media screen and (max-width: 992px) {
+            padding-top: 120px;
+        }
+        .wrapper-presentation {
+            .text-presentation {
+                @media screen and (max-width: 992px) {
+                    flex-direction: column;
+                }
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                // position: relative;
+                .bloc-left {
+                    margin-left: 24vw;
+                    @media screen and (max-width: 992px) {
+                        padding-top: 0;
+                        margin-left: 0;
+                    }
+                    .text {
+                        p {
+                            color: #fff;
+                            font-size: calc(18px + 1.7vw);
+                            line-height: 90px;
+                            @media screen and (max-width: 992px) {
+                                line-height: 70px;
+                            }
+                            font-weight: bold;
+                            z-index: 3;
+                            position: relative;
+                            span:first-of-type {
+                                color: $red;
+                            }
+                            span:last-child {
+                                color: $cyan;
+                            }
+                        }
+                    }
+                }
+                a {
+                    color: $cyan;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: transparent;
+                    outline: none;
+                    border: 1px solid $cyan;
+                    // padding: 10px 20px;
+                    height: 50px;
+                    width: 200px;
+                    margin-top: 10px;
+                    font-family: 'Montserrat';
+                    transition: 0.2s;
+                    cursor: pointer;
+                    letter-spacing: 2px;
+                    &:hover {
+                        background: #000;
+                        color: #fff;
+                        border: none;
+                        transform: translateX(3px);
+                    }
+                    @media screen and (max-width: 992px) {
+                        margin-bottom: 20px;
+                    }
+                }
+                img {
+                    z-index: 0;
+                    width: calc(15vw + 250px);
+                    position: absolute;
+                    right: 10vw;
+                    @media screen and (max-width: 992px) {
+                        position: static;
+                        width: 300px;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
