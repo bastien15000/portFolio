@@ -1,9 +1,9 @@
 #contact {
     margin-top: 150px;
-    padding: 0 0 0 220px;
+    padding: 0 0 100px 220px;
     @media screen and (max-width: 992px) {
         margin: 0 auto;
-        padding: 0;
+        padding: 0 0 100px;
     }
     .contact-wrapper {
         display: flex;
@@ -12,7 +12,7 @@
                 width: 100%;
             }
             width: 50%;
-            margin-top: 110px;
+            margin-top: 130px;
             .form-wrapper {
                 width: 80%;
                 margin: 0 auto;
@@ -23,7 +23,7 @@
                 p {
                     color: white;
                     font-size: calc(15px + 0.3vw);
-                    margin: 20px 0;
+                    margin: 20px 0 10px;
                 }
                 form {
                     display: flex;
@@ -35,27 +35,13 @@
                             border: none;
                             color: $grayText;
                             padding: 0 20px;
-                            font-size: 18px;
+                            font-size: 19px;
                         }
                     }
                     input {
-                        height: 40px;
+                        height: 50px;
                         font-family: 'Montserrat';
                         outline: none;
-                        &[type="submit"] {
-                            width: 25%;
-                            color: $cyan;
-                            background: transparent;
-                            border: 1px solid $cyan;
-                            transition: 0.3s;
-                            cursor: pointer;
-                            &:hover {
-                                background: #000;
-                                color: #fff;
-                                border: none;
-                                transform: translateX(3px);
-                            }
-                        }
                     }
                     #message {
                         font-family: 'Montserrat';
@@ -67,6 +53,23 @@
                     .submit-container {
                         display: flex;
                         justify-content: end;
+                        a {
+                            color: $cyan;
+                            background: transparent;
+                            border: 1px solid $cyan;
+                            transition: 0.3s;
+                            cursor: pointer;
+                            padding: 10px 20px;
+                            text-align: center;
+                            font-family: 'Montserrat';
+                            outline: none;
+                            &:hover {
+                                background: #000;
+                                color: #fff;
+                                border: none;
+                                transform: translateX(3px);
+                            }
+                        }
                     }
                 }
             }
@@ -89,9 +92,18 @@
                 bottom: 0px;
                 background: #000;
                 opacity: 70%;
-                height: 70px;
+                height: 50px;
                 left: 50%;
                 transform: translateX(-50%);
+                width: 273px;
+                p {
+                    padding: 0 25px;
+                    margin-top: 12px;
+                    color: #fff;
+                    span {
+                        color: $cyan;
+                    }
+                }
             }
         }
     }
